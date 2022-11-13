@@ -90,7 +90,7 @@ namespace Bican_Iulia_Lab2.Data
                     context.Publishers.Add(p);
                 }
                 context.SaveChanges();
-                //var books = context.Books;
+                var books = context.Books;
 
                 var publishedbooks = new PublishedBook[]{
                     new PublishedBook { BookID = books.Single(c => c.Title == "Maytrei" ).ID, PublisherID = publishers.Single(i => i.PublisherName == "Humanitas").ID},
